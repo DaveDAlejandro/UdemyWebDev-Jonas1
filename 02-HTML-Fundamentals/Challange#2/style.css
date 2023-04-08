@@ -1,0 +1,49 @@
+article {
+  border: 5px solid black;
+  font-family: sans-serif;
+}
+
+article h2 {
+  text-align: center;
+  background-color: #dddddd;
+}
+
+.capitals {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+}
+
+.titles {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+/* BUTTONS */
+
+.buttoms {
+  border: none;
+  background-color: black;
+  color: #dddddd;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buttoms:hover {
+  border: none;
+  background-color: #dddddd;
+  color: black;
+}
+
+/* LINKS */
+
+.linkstyle {
+  color: black;
+}
+
+.linkstyle:hover {
+  text-decoration: none;
+}
