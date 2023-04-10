@@ -1,16 +1,37 @@
-h1,
-h2,
-h3,
-p,
-li {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: sans-serif;
   color: #444;
+  margin: 20px;
+  background-color: rgb(223, 223, 223);
 }
 
 h1,
 h2,
 h3 {
   color: rgb(15, 119, 119);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+article {
+  margin-bottom: 80px;
+}
+
+.main-header {
+  border-top: solid 10px #0f7777;
+  background-color: antiquewhite;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
 }
 
 /* Pseudo-classes are usually usefull whenever you have a list of repeating
@@ -23,6 +44,7 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
+  margin-bottom: 0;
 }
 
 /* li:nth-child(even) {
@@ -49,14 +71,21 @@ be using classes instead */
   font-weight: bold;
 }
 
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
 h1 {
-  font-size: 50px;
+  font-size: 30px;
   text-transform: uppercase;
   font-style: italic;
 }
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -68,22 +97,21 @@ h3 {
 p {
   font-size: 20px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 li {
   font-size: 20px;
-}
-
-body {
-  background-color: rgb(223, 223, 223);
+  margin-bottom: 10px;
 }
 
 aside {
   background-color: rgb(255, 223, 197);
   border-top: 5px solid #0f7777;
   border-bottom: 5px solid #0f7777;
+  padding: 50px 50px 30px 30px;
+  width: 500px;
 }
-
 /* Styling links */
 
 a:link {
@@ -108,3 +136,8 @@ a:active {
 }
 
 /* L V H A */
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
