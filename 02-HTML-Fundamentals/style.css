@@ -22,6 +22,12 @@ article {
   margin-bottom: 80px;
 }
 
+.container {
+  width: 800px;
+  /* This centers all the content in the div... amazing */
+  margin: 0 auto;
+}
+
 .main-header {
   border-top: solid 10px #0f7777;
   background-color: antiquewhite;
