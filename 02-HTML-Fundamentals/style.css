@@ -10,6 +10,8 @@ body {
   background-color: rgb(223, 223, 223);
 }
 
+/*  */
+
 h1,
 h2,
 h3 {
@@ -33,7 +35,6 @@ article {
   background-color: antiquewhite;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
 }
 
 .post-header {
@@ -146,4 +147,13 @@ a:active {
 .post-image {
   width: 100%;
   height: auto;
+}
+
+nav a:link {
+  margin-right: 30px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
