@@ -94,6 +94,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
@@ -150,6 +151,10 @@ a:active {
   height: auto;
 }
 
+nav {
+  text-align: center;
+}
+
 nav a:link {
   margin-right: 30px;
   display: inline-block;
@@ -166,4 +171,32 @@ nav a:link:last-child {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+/* Pseudo elements */
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
+}
+
+/* Adjacent sibling selection */
+
+h3 + p::first-line {
+  color: #0f7777;
+}
+
+/* After and before pseudo-elements */
+
+h2::after {
+  content: "TOP";
+  color: aliceblue;
+  background-color: #444;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 5px;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  right: -15px;
 }

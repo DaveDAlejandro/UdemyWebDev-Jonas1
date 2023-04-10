@@ -25,8 +25,13 @@ p {
   font-weight: bold;
 }
 
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .details {
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 .capitals {
@@ -71,4 +76,59 @@ p {
 
 .linkstyle:hover {
   text-decoration: none;
+}
+
+.color {
+  margin: 15px 3px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.color:first-child {
+  margin-left: 0;
+}
+
+.negro {
+  background-color: black;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.rojo {
+  background-color: red;
+}
+
+.amarillo {
+  background-color: yellow;
+}
+
+.verde {
+  background-color: green;
+}
+
+.cafe {
+  background-color: brown;
+}
+
+.sale-parent {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.sale-child {
+  color: aliceblue;
+  background-color: red;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -34px;
+  letter-spacing: 3px;
+  border: solid black 3px;
 }
