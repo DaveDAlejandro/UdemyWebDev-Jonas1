@@ -28,6 +28,7 @@ p {
 .price {
   font-size: 24px;
   font-weight: bold;
+  display: inline-block;
 }
 
 .details {
@@ -39,7 +40,7 @@ p {
   font-weight: bold;
   color: rgb(145, 145, 145);
   font-size: 13px;
-  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .titles {
@@ -131,4 +132,32 @@ p {
   left: -34px;
   letter-spacing: 3px;
   border: solid black 3px;
+}
+
+/* Flexbox approach */
+
+.flex-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.shipping {
+  flex: 1;
+}
+
+.details-flex {
+  flex: 1;
+}
+
+.img-top {
+  display: flex;
+  flex: 0;
+}
+
+.shipping-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
