@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,12 +21,8 @@ h3 {
   margin-top: 30px;
 }
 
-article {
-  margin-bottom: 80px;
-}
-
 .container {
-  width: 800px;
+  width: 1200px;
   /* This centers all the content in the div... amazing */
   margin: 0 auto;
   position: relative;
@@ -35,7 +32,6 @@ article {
   border-top: solid 10px #0f7777;
   background-color: antiquewhite;
   padding: 20px 40px;
-  margin-bottom: 60px;
 }
 
 .post-header {
@@ -62,10 +58,6 @@ li:last-child {
 /* Using ID is not a good practice. Just so you know, you should
 be using classes instead */
 
-#author {
-  font-style: italic;
-}
-
 #copyr {
   font-size: 13px;
 }
@@ -75,7 +67,7 @@ be using classes instead */
 }
 
 .related-author {
-  font-size: 26px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -103,6 +95,10 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  font-size: 10px;
+}
+
 p {
   font-size: 20px;
   line-height: 1.5;
@@ -118,7 +114,6 @@ aside {
   background-color: rgb(255, 223, 197);
   border-top: 5px solid #0f7777;
   border-bottom: 5px solid #0f7777;
-  padding: 50px 50px 30px 30px;
   width: 500px;
 }
 /* Styling links */
@@ -156,8 +151,8 @@ nav {
 }
 
 nav a:link {
-  margin-right: 30px;
   display: inline-block;
+  margin-right: 20px;
 }
 
 nav a:link:last-child {
@@ -199,4 +194,58 @@ h2::after {
   position: absolute;
   top: -20px;
   right: -15px;
+}
+
+/* Flexbox approach CSS */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.author {
+  margin-bottom: 0px;
+  margin-left: 40px;
+  font-style: italic;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.related-author {
+}
+
+.related-link:link {
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+aside {
+  flex: 0 0 300px;
+  display: block;
+}
+
+article {
+  flex: 1;
 }
